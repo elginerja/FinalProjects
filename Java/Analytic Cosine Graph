@@ -1,0 +1,31 @@
+// This is the Anayltic Cosine graph for the final. On my honor, Jack Elginer, this is my work, and it was not provided to me.
+import numpy as np
+import matplotlib.pyplot as plt
+
+x = np.linspace(-np.pi, np.pi, 200)
+y_cos = np.zeros(len(x))
+
+labels = ['Zeroth Order', 'Second Order', 'Fourth Order', 'Sixth Order']
+
+plt.figure(figsize=(10, 8))
+
+for n, label in zip(range(4), labels):
+    y_cos = y_cos + ((-1)**n * (x)**(2*n)) / np.math.factorial(2*n)
+    plt.plot(x, y_cos, label=label)
+
+plt.plot(x, np.cos(x), 'k', label='Analytic Cosine')  # actual graph
+plt.grid()
+plt.title('Taylor Series Approximations of Various Orders for cos(x)')
+plt.xlabel('x')
+plt.ylabel('y')
+plt.legend()
+plt.show()
+
+# Evaluate the 7th-degree polynomial at x = pi/2
+x_eval = np.pi/2
+y_eval = 0
+
+for n in range(4):
+    y_eval = y_eval + ((-1)**n * (x_eval)**(2*n)) / np.math.factorial(2*n)
+
+print(y_eval)
