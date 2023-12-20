@@ -1,3 +1,4 @@
+// On my honor, this is my code and it was not provided to me.-Jack Elginer
 import java.util.Scanner;
 
 public class ACMEPay {
