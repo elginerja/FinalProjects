@@ -3,7 +3,7 @@
    grades entered by the user
    into other forms of the same
    grade. The results are shown
-   in a GUI, as is the input.
+   in a GUI, as is the input.// On my honor, this is my code and it was not provided to me.-Jack Elginer
 */
 
 import javax.swing.JOptionPane;
