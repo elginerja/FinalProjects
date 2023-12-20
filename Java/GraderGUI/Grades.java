@@ -2,7 +2,7 @@
    and a numeric grade 0 - 4 and converts
    the letter grade to a numeric grade and
    the numeric grade to a letter grade.
-*/
+*/// On my honor, this is my code and it was not provided to me.-Jack Elginer
 public class Grades
 {
 	// Instance fields
